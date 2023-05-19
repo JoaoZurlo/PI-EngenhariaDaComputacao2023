@@ -44,27 +44,47 @@
             <h1 class="display-4">Como o sistema irá funcionar?<i class="fas fa-globe-americas"></i></h1>
         </div>
     </div>
-    <div class="container">
-        <div class="col-sm-6">
-            <div class="col-sm-6">
-                <div class="card-github">
-                    <h5 class="card-title">Etapa 1: conhecendo o sistema da granja</h5>
-                    <img src="..//imagens-videos/imagem1.jpg"></img>
-                    <p class="texto">Nesta imagem representa uma linha de ração da granja, ( Seu funcionamento é muito simples e consiste no recebimento da ração em um depósito, e sua distribuição nos pratos do circuito, através de tubo galvanizado com um helicóide interno. O abastecimento da ração é controlado por um prato de controle unificado (final / individual) que liga e desliga o sistema automaticamente, levando em consideração o nível de ração existente. O sistema de regulagem da altura da linha é feito por guincho. Depósito desmontável e acionamento compacto, permitem a elevação das linhas mais próximas do pé-direito, facilitando a retirada das aves e a limpeza do aviário. "http://agropanmg.com.br/produtos/avicultura/frango-de-corte/comedouro-tuboflex-individual/")</p>
-                </div>
-            </div>
-        </div>
-            <div class="col-sm-6">
+          <div class="container">
                 <div class="card">
-                    <div class="card-github">
-                        <h5 class="card-title">Etapa 2: conhecendo o sistema da granja</h5>
-                        <img src="..//imagens-videos/video1.mp4"></img>
-                        <p class="texto">Nesta imagem representa uma linha de ração da granja, ( Seu funcionamento é muito simples e consiste no recebimento da ração em um depósito, e sua distribuição nos pratos do circuito, através de tubo galvanizado com um helicóide interno. O abastecimento da ração é controlado por um prato de controle unificado (final / individual) que liga e desliga o sistema automaticamente, levando em consideração o nível de ração existente. O sistema de regulagem da altura da linha é feito por guincho. Depósito desmontável e acionamento compacto, permitem a elevação das linhas mais próximas do pé-direito, facilitando a retirada das aves e a limpeza do aviário. "http://agropanmg.com.br/produtos/avicultura/frango-de-corte/comedouro-tuboflex-individual/")</p>
+                    <div class="card-sistema">
+                            <h5 class="card-title">ETAPA 1: Conhecendo o sistema da granja</h5>
+                        <p class="card-text">Na imagem e no video abaixo será possivel observar o que é a linha de ração de uma granja. "Seu funcionamento é muito simples e consiste no recebimento da ração em um depósito, e sua distribuição nos pratos do circuito, através de tubo galvanizado com um helicóide interno. O abastecimento da ração é controlado por um prato de controle unificado (final / individual) que liga e desliga o sistema automaticamente, levando em consideração o nível de ração existente. O sistema de regulagem da altura da linha é feito por guincho. Depósito desmontável e acionamento compacto, permitem a elevação das linhas mais próximas do pé-direito, facilitando a retirada das aves e a limpeza do aviário. (retirado de : http://agropanmg.com.br/produtos/avicultura/frango-de-corte/comedouro-tuboflex-individual/"</p>
+                        <img source src="../imagens-videos/imagem1.jpg" type="imagem/jpg"> <br> </img>
+                        <video width="320" height="240" controls> <source src="../imagens-videos/video1.mp4" type="video/mp4"></video>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="container">
+                <div class="card">
+                    <a>ETAPA 2: Materiais a serem utilizados na automação</a>
+                    <div class="card-sistema">
+                        <h5 class="card-title">ETAPA 2: Materiais a serem utilizados na automação</h5>
+                        <p class="card-text">Materiais necessários: -Arduino Uno ou similar; -Módulo de controle de motor (L298N ou similar); -Motor de vidro de carro; -LED verde e vermelho; -Resistores para os LEDs; -Fonte de alimentação 12V; -Módulo Wi-Fi como ESP8266 ou ESP32</p>
+                        <img width="320" height="240" source src="../imagens-videos/imagem2.jpg" type="imagem/jpg">
+                    </div>
+                </div>
+            </div>
+         <div class="container">
+                <div class="card">
+                    <div class="card-sistema" >
+                            <h5 class="card-title">ETAPA 3: Funcionamento do sistema</h5>
+                        <p class="card-text">No video abaixo é possivel observar que é possivel movimentar o comedouro de ração para frente e para trás sem qualquer automção, com tanto que uma pesoa o movimente. Logo seria de um grande desgaste para o granjeiro rter que a cada 40 minutos ter que ir até o galpao e fazer este movimento. Este projeto portanto tende a facilitar o manejo.</p>
+                        <video width="320" height="240" controls> <source src="../imagens-videos/video2.mp4" type="video/mp4"></video> <br/>
+                        <p class="card-text">No código abaixo será a configuração do Arduino junto com os Materiais a serem utilzados na automação</a>. motor de vidro é controlado usando a biblioteca Servo.h, que permite controlar um servo motor. A configuração dos LEDs e dos pinos do motor é feita no setup e a lógica para acionar o motor e os LEDs é feita no loop. A variável "motor_ligado" é usada para saber se o motor está ligado ou não. O intervalo de tempo entre cada movimento é de 40 minutos e a duração do movimento é de 20 segundos. O código também inclui o desligamento do motor e a troca dos LEDs ligados para indicar se o motor está ligado (LED verde aceso) ou desligado (LED vermelho aceso). </p>
+         <div class="container">
+                <div class="card">
+                    <div class="card-sistema" >
+                            <h5 class="card-title">Código do sistema Arduino (Por não possuir os materiais necessários para fazer a demonstração fisica do funcionamento e não ter simuladores onlines que contenham toda a instrumentação necessária apresentarei apenas os códigos do sistema e suas devidas explicações nas imagens abaixo).</h5>
+                        <img width="600" height="200" source src="../imagens-videos/codigo1.jpg" type="imagem/jpg"> </img> 
+                        <img width="600" height="330" source src="../imagens-videos/codigo2.jpg" type="imagem/jpg"> </img>
+                        <img width="600" height="330" source src="../imagens-videos/codigo3.jpg" type="imagem/jpg"> </img>
+                        <img width="600" height="200" source src="../imagens-videos/codigo4.jpg" type="imagem/jpg"> </img>
+                        <p><u>Com os codigos mostrados nas imagens acima, é possivel finalizar esta etapa.</u> <br> <br>
+                        Portanto como mostrado no video o jeito manual de manipulação do comedouro é possivel imaginar que com o codigo feito e o sistema rodando conforme descrito as etapas no codigo será posivel de forma remota controlar todo o sistema, ligando desligando alterando conforme o cliente quiser o tempo de execução e o inervalo de tempo que devera  ligar.</p>
+                    </div>
+                </div>
+         </div>  
+         </div>
 
 </body>
 
