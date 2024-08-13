@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom right, rgb(2, 185, 8), black);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.footer-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000; /* Garante que o nav fique acima de outros elementos */
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-list li {
+    display: inline;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-list li:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-top: 60px; /* Adiciona margem para evitar sobreposição com o nav */
+    width: 80%;
+    max-width: 600px; /* Limita a largura máxima para manter o design responsivo */
+    height: calc(100vh - 60px); /* Ajusta a altura do container para se ajustar à altura da tela menos o nav */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid rgb(2, 185, 8);
+}
+
+.container h1 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    color: white;
+}
+
+.resume {
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.icon-button {
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.icon-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
